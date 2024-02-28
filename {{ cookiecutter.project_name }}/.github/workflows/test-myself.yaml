@@ -1,0 +1,25 @@
+name: Test `{{ cookiecutter.project_name }}` action
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-{{ cookiecutter.project_name }}:
+    runs-on: [ 'ubuntu-latest' ]
+    name: Test
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Test
+        id: test
+        uses: ./
+        with:
+          name: test-*
+      - name: Check
+        run: |
+          echo "${{ steps.test.outputs.result }}"
+          test "${{ steps.test.outputs.result }}" = "[test-2,test-1]"

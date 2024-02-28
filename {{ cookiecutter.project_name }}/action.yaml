@@ -1,0 +1,16 @@
+name: "{{ cookiecutter.project_name }}"
+description: "{{ cookiecutter.description }}"
+author: Vladimir Levin
+branding:
+  icon: code
+  color: purple
+inputs:
+  name:
+    description: Random desc
+    required: true
+outputs:
+  result:
+    description: Result list in JSON format
+runs:
+  using: 'node20'
+  main: 'action/index.js'
