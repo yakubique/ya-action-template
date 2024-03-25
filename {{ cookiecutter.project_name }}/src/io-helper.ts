@@ -1,6 +1,6 @@
 import * as core from '@actions/core';
 
-enum Inputs {
+export enum Inputs {
     Name = 'name'
 }
 
