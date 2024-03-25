@@ -9,7 +9,7 @@ export interface ActionInputs {
 }
 
 export function getInputs(): ActionInputs {
-    const result: ActionInputs | any = {};
+    const result = {} as ActionInputs;
 
     result.name = core.getInput(Inputs.Name, { required: true });
 

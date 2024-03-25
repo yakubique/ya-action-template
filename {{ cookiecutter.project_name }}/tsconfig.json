@@ -13,7 +13,11 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitAny": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": [
+      "node",
+      "jest"
+    ]
   },
   "include": [
     "./src/**/*"
@@ -21,6 +25,8 @@
   "exclude": [
     "./node_modules",
     "{{ cookiecutter.project_name }}/src/**/*.spec.ts",
-    "{{ cookiecutter.project_name }}/src/**/*.test.ts"
+    "{{ cookiecutter.project_name }}/src/**/*.test.ts",
+    "./__tests__",
+    "./coverage"
   ]
 }

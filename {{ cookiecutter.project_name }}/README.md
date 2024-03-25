@@ -1,8 +1,10 @@
 # {{ cookiecutter.project_title }}
 
+[![Coverage](./badges/coverage.svg)](./badges/coverage.svg)
+[![Test `{{ cookiecutter.project_name }}` action](https://github.com/yakubique/{{ cookiecutter.project_name }}/actions/workflows/test-myself.yaml/badge.svg)](https://github.com/yakubique/{{ cookiecutter.project_name }}/actions/workflows/test-myself.yaml)
+
 {{ cookiecutter.description }}
 
-[![Test `{{ cookiecutter.project_name }}` action](https://github.com/yakubique/{{ cookiecutter.project_name }}/actions/workflows/test-myself.yaml/badge.svg)](https://github.com/yakubique/{{ cookiecutter.project_name }}/actions/workflows/test-myself.yaml)
 
 [Usage workflow](https://github.com/yakubique/{{ cookiecutter.project_name }}/actions/workflows/test-myself.yaml)
 
